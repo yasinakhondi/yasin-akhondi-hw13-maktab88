@@ -17,4 +17,7 @@ app.get("/", function (req, res) {
   res.send("root route");
 });
 
+app.use("/*", (req, res) => {
+  res.send("NOT FOUND!!!!!!!!");
+});
 app.listen(4001);
