@@ -12,4 +12,5 @@ app.get("/picture", function (req, res) {
 app.get("/picture1", function (req, res) {
   res.sendFile(path.join(__dirname, "picture.jpg"));
 });
+
 app.listen(5006);
